@@ -1,0 +1,39 @@
+Test Result for Assignment 1 based on the environment from req_assignment1.txt
+Testing Pre-processed Data (first 10 rows):
+Row 1: PASS
+Row 2: PASS
+Row 3: PASS
+Row 4: PASS
+Row 5: PASS
+Row 6: PASS
+Row 7: PASS
+Row 8: PASS
+Row 9: PASS
+Row 10: PASS
+Pre-processed Data Test: PASS
+
+Testing Part 1 (Cross-validation without parameter tuning):
+LogR average CV accuracy: computed=0.67, expected=0.67 --> PASS
+NB average CV accuracy: computed=0.6555, expected=0.6555 --> PASS
+DT average CV accuracy: computed=0.7702, expected=0.7702 --> PASS
+Bagging average CV accuracy: computed=0.7705, expected=0.7514 --> FAIL
+AdaBoost average CV accuracy: computed=0.7367, expected=0.7562 --> FAIL
+GB average CV accuracy: computed=0.7464, expected=0.7464 --> PASS
+
+Testing Part 2 (Cross-validation with parameter tuning):
+KNN best k: computed=1, expected=1 --> PASS
+KNN best p: computed=1, expected=1 --> PASS
+KNN CV accuracy: computed=0.7329, expected=0.7329 --> PASS
+KNN test accuracy: computed=0.6415, expected=0.6415 --> PASS
+
+SVM best C: computed=5, expected=5.0 --> PASS
+SVM best gamma: computed=10, expected=10.0 --> PASS
+SVM CV accuracy: computed=0.6858, expected=0.6858 --> PASS
+SVM test accuracy: computed=0.5849, expected=0.5849 --> PASS
+
+RF best n_estimators: computed=60, expected=60 --> PASS
+RF best max_leaf_nodes: computed=12, expected=12 --> PASS
+RF CV accuracy: computed=0.7883, expected=0.7883 --> PASS
+RF test accuracy: computed=0.6981, expected=0.6981 --> PASS
+RF macro average F1: computed=0.6845, expected=0.6845 --> PASS
+RF weighted average F1: computed=0.6956, expected=0.6956 --> PASS
